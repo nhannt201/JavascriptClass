@@ -1,13 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Learn Javascript Class</title>
-		<meta charset="utf-8"/>
-	</head>
-	<body>
-	</body>
-	<script type="text/javascript">
-		class MyProfile {
+class MyProfile {
 			constructor(name, old, location, intro) {		
 				this.name = name;
 				this.old = old;
@@ -35,7 +26,5 @@
 				document.body.appendChild(chilD);
 			}
 		}
-		newPerson =  new MyProfile("Jack Son",20,"UK","Hello everyone!");
-		newPerson.printProfile();
-	</script>
-</html>
+		//newPerson =  new MyProfile("Jack Son",20,"UK","Hello everyone!");
+		//newPerson.printProfile();
