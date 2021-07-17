@@ -1,15 +1,105 @@
 body {
 	background-color: #F0F8FF;
 }
-.container {
-	justify-content: center;
-	display: flex;
+
+.left-menu {
 	background-color: white;
-	width: 85%;
-	margin: auto;
+	width: 10%;
 	padding: 30px;
+	border-radius: 25px;
+	border: 1px solid #000;
+	margin-right: 10px;
+	transition: width 0.1s;
+}
+.left-menu:hover {
+	background-color: white;
+	width: 20%;
+	transition: width 0.1s;
+	padding: 30px;
+	border-radius: 25px;
+	border: 1px solid #000;
+	margin-right: 10px;
 	
 }
-.welcome {
+.left-menu .first-menu {
+	font-size: 30px;
+}
+.left-menu .main-menu {
+	font-size: 20px;
+	padding: 10px;
+}
+.left-menu .main-menu .menu {
+	padding: 5px;
+}
+.left-menu .main-menu .menu a:link {
+	color: black;
+	text-decoration: none;
+}
+.left-menu .main-menu .menu a:active   {
+	color: black;
+	text-decoration: none;
+}
+.left-menu .main-menu .menu a:visited {
+	color: black;
+	text-decoration: none;
+}
+.right-content {
+	/*justify-content: center;
+	display: flex;
+	margin: auto;*/
+	background-color: white;
+	width: 80%;
+	padding: 30px;
+	border-radius: 25px;
+	border: 1px solid #000;
+	word-wrap:break-word;
+}
+.right-content .title {
 	font-size: 35px;
+}
+.right-content .content {
+	font-size: 20px;
+	border-left: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 15px 50px;
+	padding: 	0px 0px 0px 20px;
+	margin-left: 10px;
+	margin-top: 10px;
+	
+}
+
+
+
+
+
+@media screen and (max-width: 540px) {
+	/*Mobile*/
+	.container {
+		justify-content: space-between;
+		height: auto;
+	}
+	.left-menu {
+		margin-bottom: 10px;
+		width: 80%;
+		min-width: 100px;;
+	}
+	.left-menu:hover {
+		width: auto;
+		min-width: 100px;;
+	}
+	.right-content {
+		min-width: 100px;;
+	}
+
+}
+
+
+@media screen and (min-width: 540px) {
+	/*Desktop*/
+	.container {
+		display: flex;
+		justify-content: space-between;
+		height: auto;
+	}
+
 }
