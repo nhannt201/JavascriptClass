@@ -30,6 +30,7 @@ body {
 }
 .left-menu .main-menu .menu {
 	padding: 5px;
+	cursor: pointer;
 }
 .left-menu .main-menu .menu a:link {
 	color: black;
