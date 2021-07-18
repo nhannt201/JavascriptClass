@@ -6,28 +6,41 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css"/>		
+		
 	</head>
-	<body>
+	<body onload="loadPage('home-content')">
 		<div class="container" id="container">
+			<!--Menu-->
 			<div class="left-menu">
 				<div class="first-menu">Menu</div>
 				<div class="main-menu">
-					<div class="menu">
+					<div class="menu" id="menu-about">
 						<a href="">Home</a>
 					</div>
-					<div class="menu">
+					<div class="menu" id="menu-blog">
 						<a href="">Blog</a>
 					</div>
-					<div class="menu">
+					<div class="menu" id="menu-about">
 						<a href="">About</a>
 					</div>
 				</div>
 				<div class="end-menu">Coppyright 2021</div>
 			</div>
-			<div class="right-content">
-				<div class="title">Welcome to Index!</div>
+			<!--Menu Content-->
+			<div id="home-content" class="non-show">
+				<div class="title">Welcome to Home!</div>
 				<div class="content">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
-			</div>	
+			</div>
+			<div id="blog-content" class="non-show">
+				<div class="title">Welcome to Blog!</div>
+				<div class="content">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+			</div>
+			<div id="about-content" class="non-show">
+				<div class="title">Welcome to About!</div>
+				<div class="content">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+			</div>
+			<!--Content-->
+			<div class="right-content" id="main-content"></div>	
 		</div>
 	</body>
 	<script type="text/javascript" src="render.js"></script>

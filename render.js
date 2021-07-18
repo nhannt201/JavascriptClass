@@ -16,3 +16,13 @@ class init {
 
 //init.makeBody();
 
+function loadPage(id_menu) {
+	document.getElementById("main-content").innerHTML = document.getElementById(id_menu).innerHTML;
+}
+
+var listenMenu = document.querySelectorAll(".menu");
+for (var i = 0, len = listenMenu.length; i < len; i++) {
+	var id_name = listenMenu[i].id;
+	alert(id_name);
+    //document.getElementById(listenMenu[i].id).addEventListener("click", loadPage);
+}
