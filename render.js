@@ -17,12 +17,20 @@ class init {
 //init.makeBody();
 
 function loadPage(id_menu) {
+	//console.log(id_menu);
+	//Set new content follow menu div
 	document.getElementById("main-content").innerHTML = document.getElementById(id_menu).innerHTML;
 }
 
-var listenMenu = document.querySelectorAll(".menu");
-for (var i = 0, len = listenMenu.length; i < len; i++) {
-	var id_name = listenMenu[i].id;
-	alert(id_name);
-    //document.getElementById(listenMenu[i].id).addEventListener("click", loadPage);
+var listenMenu = document.querySelectorAll(".menu"); //Get menu
+for (var i = 0; i < listenMenu.length	; i++) {
+	//Listen click menu and show to main
+	addListen(listenMenu[i].id);
+	
+}
+
+function addListen(thisid) {
+	document.getElementById(thisid).addEventListener("click", function() { 
+		loadPage(thisid.replace("menu-","") + "-content"); 
+	});
 }
