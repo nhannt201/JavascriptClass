@@ -11,7 +11,7 @@ body {
 	margin-right: 10px;
 	transition: width 0.1s;
 }
-.left-menu:hover {
+.left-menu.wave-menu:hover { /*Menu lướt sang phải khi rê chuột*/
 	background-color: white;
 	width: 20%;
 	transition: width 0.1s;
@@ -19,7 +19,6 @@ body {
 	border-radius: 25px;
 	border: 1px solid #000;
 	margin-right: 10px;
-	
 }
 .left-menu .first-menu {
 	font-size: 30px;
