@@ -20,6 +20,7 @@ function loadPage(id_menu) {
 	//console.log(id_menu);
 	//Set new content follow menu div
 	document.getElementById("main-content").innerHTML = document.getElementById(id_menu).innerHTML;
+	//document.getElementById("top-title").innerHTML = document.getElementById(id_menu.replace("content","title")).innerHTML; //change title follow page
 }
 
 var listenMenu = document.querySelectorAll(".menu"); //Get menu
